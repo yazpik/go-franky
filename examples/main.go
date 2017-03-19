@@ -23,7 +23,7 @@ import (
 )
 
 func main() {
-	kubeconfig := flag.String("kubeconfig", "./config", "$HOME/.kube/config")
+	kubeconfig := flag.String("kubeconfig", "./config", "/Users/yazpik/.kube/config")
 	flag.Parse()
 	// uses the current context in kubeconfig
 	config, err := clientcmd.BuildConfigFromFlags("", *kubeconfig)
