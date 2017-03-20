@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /Users/yazpik/kubernetes/coreos-kubernetes/multi-node/vagrant/ssl/ca.pem
+    server: https://172.17.4.101:443
+  name: vagrant-multi-cluster
+contexts:
+- context:
+    cluster: vagrant-multi-cluster
+    user: vagrant-multi-admin
+  name: vagrant-multi
+current-context: vagrant-multi
+kind: Config
+preferences: {}
+users:
+- name: vagrant-multi-admin
+  user:
+    client-certificate: /Users/yazpik/kubernetes/coreos-kubernetes/multi-node/vagrant/ssl/admin.pem
+    client-key: /Users/yazpik/kubernetes/coreos-kubernetes/multi-node/vagrant/ssl/admin-key.pem

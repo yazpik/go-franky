@@ -24,7 +24,7 @@ import (
 )
 
 var (
-	kubeconfig = flag.String("kubeconfig", "./config", "/Users/yazpik/.kube/config")
+	kubeconfig = flag.String("kubeconfig", "./config", "$HOME/.kube/config")
 )
 
 func main() {
