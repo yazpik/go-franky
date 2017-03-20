@@ -3,7 +3,7 @@ franky likes to talk with kubernetes
 
 Nothing to see here... 
 
-Some notes from go-client
+Some notes from go-client https://github.com/kubernetes/client-go
 ### For the casual user
 
 Currently, there is no super easy way to use client-go. Hopefully this will change soon. Simply running go get k8s.io/client-go/... will leave you with a library that can't practically be used. It is important to synchronize your dependencies with the ones that are required by the library.
